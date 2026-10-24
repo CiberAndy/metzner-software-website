@@ -1,0 +1,35 @@
+METZNER SOFTWARE ENTWICKLUNG – WEBSITE
+
+LOKAL ANSEHEN
+Die ZIP vollständig in einen Ordner entpacken. Anschließend index.html
+öffnen. Die Dateien im Ordner assets müssen an ihrem Platz bleiben.
+
+Optional: Falls Python bereits installiert ist, im entpackten Ordner ein
+Terminal öffnen und diese lokale HTTP-Vorschau starten:
+  python -m http.server 8000 --bind 127.0.0.1
+Danach im Browser http://127.0.0.1:8000 öffnen. Mit Strg+C beenden.
+
+SPÄTER AUF DEN WEBSPACE ÜBERTRAGEN
+Die Website ist statisch. Installation und Build sind nicht erforderlich.
+Vor dem Ersetzen bestehende Serverdateien sichern. Danach index.html,
+impressum.html, datenschutz.html und den vollständigen Ordner assets
+unverändert in das gewählte Webroot hochladen; die relative Ordnerstruktur
+beibehalten. LIESMICH.txt muss nicht hochgeladen werden.
+Dieses Paket wurde nicht eigenständig veröffentlicht.
+
+VOR EINER VERÖFFENTLICHUNG FACHLICH BESTÄTIGEN
+Die Rechtstexte wurden aus dem Original übernommen. Dessen offene Hinweise
+gelten weiterhin und müssen anhand des tatsächlichen Betriebs geprüft und
+gegebenenfalls ergänzt werden:
+- konkreter Hosting-Anbieter;
+- tatsächliche Server-Log-Verarbeitung und Speicherfristen;
+- gegebenenfalls erforderliche Auftragsverarbeitung und eingesetzte
+  E-Mail-Dienstleister;
+- Vollständigkeit und Richtigkeit der Anbieterangaben sowie alle im
+  Einzelfall erforderlichen Impressumsangaben.
+Eingetragen sind Josef-Mörtl-Straße 7, 86482 Aystetten und USt-IdNr.
+DE465441034. Auch diese Angaben fachlich bestätigen lassen.
+
+LOKALE SCHRIFTEN
+Manrope und Instrument Serif werden einschließlich ihrer OFL-Lizenztexte
+im Ordner assets/fonts mitgeliefert. Diese Lizenzdateien beibehalten.

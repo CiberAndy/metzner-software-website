@@ -1,0 +1,10 @@
+/* Essential mobile navigation remains available when JavaScript is disabled. */
+.copy-email{display:none}
+@media(max-width:600px){
+  .menu-toggle{display:none}
+  .header-inner{height:auto;min-height:76px;padding-block:18px;gap:16px;flex-wrap:wrap}
+  .main-nav{position:static;display:flex;width:100%;padding:0;flex-direction:row;flex-wrap:wrap;gap:6px 20px;border:0;box-shadow:none}
+  .main-nav>a{font-size:11px;padding-block:5px;border:0}
+  .main-nav .nav-contact{font-size:11px;margin:0;padding:5px 0;border:0}
+  .site-header{position:static}
+}
