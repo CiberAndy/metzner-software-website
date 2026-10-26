@@ -150,3 +150,9 @@ body{background:#08090d;color:#f1f3f7}
 .system-core>img{border-radius:3px}
 .signature .signature-logo{aspect-ratio:1/1;height:auto;}
 .footer-wordmark.footer-mark-only img{aspect-ratio:1/1;height:auto}
+
+/* Tight crop of the original artwork: show only the upper metallic AM monogram, never the lettering below it. */
+.system-core>img{width:100%;height:100%;object-fit:cover;object-position:50% 0%;}
+.signature .signature-logo{width:76px;height:42px;aspect-ratio:auto;object-fit:cover;object-position:50% 0%;}
+.footer-wordmark.footer-mark-only img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 0%;}
+@media(max-width:600px){.signature .signature-logo{width:62px;height:36px}.footer-wordmark.footer-mark-only{height:58px}}
