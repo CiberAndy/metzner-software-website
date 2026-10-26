@@ -38,5 +38,5 @@ jobs:
           port: ${{ secrets.ONECOM_SFTP_PORT }}
           sftp_only: true
           local_path: './*'
-          remote_path: '.'
+          remote_path: '/customers/4/d/1/cf5z7vtfd/webroots/www/'
           sftpArgs: '-o ConnectTimeout=10'
