@@ -145,22 +145,3 @@ body{background:#08090d;color:#f1f3f7}
  .footer-wordmark.footer-mark-only{width:160px;max-width:48vw}
 }
 \n/* Original full logo in legal page content; keep enough width for readable lettering. */\n.legal-full-logo{width:min(420px,100%);height:auto;object-fit:contain;margin:0 0 34px;background:#08090d}\n@media(max-width:600px){.legal-full-logo{width:min(100%,360px);margin-bottom:26px}}\n
-/* Use the original metallic logo artwork for small monogram placements; crop to the top-center symbol. */
-.system-core>img,.signature .signature-logo,.footer-wordmark.footer-mark-only img{object-fit:cover;object-position:50% 18%;background:#08090d}
-.system-core>img{border-radius:3px}
-.signature .signature-logo{aspect-ratio:1/1;height:auto;}
-.footer-wordmark.footer-mark-only img{aspect-ratio:1/1;height:auto}
-
-/* Tight crop of the original artwork: show only the upper metallic AM monogram, never the lettering below it. */
-.system-core>img{width:100%;height:100%;object-fit:cover;object-position:50% 0%;}
-.signature .signature-logo{width:76px;height:42px;aspect-ratio:auto;object-fit:cover;object-position:50% 0%;}
-.footer-wordmark.footer-mark-only img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 0%;}
-@media(max-width:600px){.signature .signature-logo{width:62px;height:36px}.footer-wordmark.footer-mark-only{height:58px}}
-
-/* Dedicated icon-only crop: isolate the AM monogram from the original full-logo PNG. */
-.system-core{overflow:hidden}
-.system-core>img,.signature .signature-logo,.footer-wordmark.footer-mark-only img{object-view-box:inset(0 18% 56% 18%);object-fit:contain;object-position:center top;background:#08090d}
-.signature .signature-logo{height:42px;width:76px}
-.footer-wordmark.footer-mark-only{height:58px}
-.footer-wordmark.footer-mark-only img{height:58px}
-@media(max-width:600px){.signature .signature-logo{height:36px;width:62px}.footer-wordmark.footer-mark-only{height:48px}.footer-wordmark.footer-mark-only img{height:48px}}
