@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+<title id="title">Andreas Metzner Softwareentwicklung</title><desc id="desc">Silbernes A und blaues M als ineinandergreifendes Monogramm mit blauer Linie.</desc>
+<defs><linearGradient id="silver" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#fff"/><stop offset=".52" stop-color="#c8ccd4"/><stop offset="1" stop-color="#8993a3"/></linearGradient><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00dfff"/><stop offset=".48" stop-color="#168cff"/><stop offset="1" stop-color="#1746c7"/></linearGradient></defs>
+<rect width="900" height="300" fill="#08090d"/>
+<g transform="translate(0 0)">
+<path d="M320 132 378 24 440 132 411 132 378 75 348 132Z" fill="url(#silver)"/>
+<path d="M430 132 506 24 506 132 482 132 482 80 445 132Z" fill="url(#blue)"/>
+<path d="M340 130 Q397 67 500 72" fill="none" stroke="url(#blue)" stroke-width="5" stroke-linecap="round"/>
+<text x="450" y="194" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="400" letter-spacing="5" fill="#f1f3f7">ANDREAS <tspan fill="#168cff">METZNER</tspan></text>
+<path d="M120 231 H255 M645 231 H780" stroke="url(#blue)" stroke-width="2"/>
+<text x="450" y="239" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" letter-spacing="8" fill="#e7eaf0">SOFTWAREENTWICKLUNG</text>
+</g></svg>
