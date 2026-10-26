@@ -109,3 +109,14 @@ body{background:#08090d;color:#f1f3f7}
 .footer-wordmark.footer-mark-only img{width:100%;height:100%;object-fit:contain}
 @media(max-width:800px){.brand.brand-mark-only{width:48px}.brand.brand-mark-only img{width:48px;height:40px}}
 @media(max-width:600px){.brand.brand-mark-only{width:44px}.brand.brand-mark-only img{width:44px;height:38px}.footer-wordmark.footer-mark-only{width:110px;height:86px;max-width:40vw}}
+
+
+/* Header lockup: logo plus full business name. */
+.brand.brand-lockup{display:flex;align-items:center;gap:12px;width:auto;max-width:min(420px,48vw);overflow:visible;font-size:18px;line-height:1.15;letter-spacing:-.025em}
+.brand.brand-lockup img{width:52px;height:44px;flex:none;object-fit:contain}
+.brand.brand-lockup>span{display:block;white-space:nowrap}
+.brand.brand-lockup small{display:block;font-size:9px;letter-spacing:.12em;font-weight:600;margin-top:6px;text-transform:none}
+.signature .signature-logo{display:block;width:76px;height:58px;object-fit:contain;flex:none}
+.signature .signature-mark{display:none}
+@media(max-width:800px){.brand.brand-lockup{font-size:15px;gap:8px;max-width:54vw}.brand.brand-lockup img{width:44px;height:38px}.brand.brand-lockup small{font-size:8px;margin-top:4px}}
+@media(max-width:600px){.brand.brand-lockup{font-size:13px;max-width:58vw;gap:6px}.brand.brand-lockup img{width:36px;height:32px}.brand.brand-lockup small{font-size:7px;letter-spacing:.09em;margin-top:3px}.signature .signature-logo{width:62px;height:48px}}
