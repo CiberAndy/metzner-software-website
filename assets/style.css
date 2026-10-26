@@ -144,3 +144,4 @@ body{background:#08090d;color:#f1f3f7}
  .system-core{width:105px;height:52px}
  .footer-wordmark.footer-mark-only{width:160px;max-width:48vw}
 }
+\n/* Original full logo in legal page content; keep enough width for readable lettering. */\n.legal-full-logo{width:min(420px,100%);height:auto;object-fit:contain;margin:0 0 34px;background:#08090d}\n@media(max-width:600px){.legal-full-logo{width:min(100%,360px);margin-bottom:26px}}\n
