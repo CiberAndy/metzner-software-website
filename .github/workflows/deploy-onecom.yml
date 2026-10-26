@@ -24,7 +24,7 @@ jobs:
 
       - name: Stamp deployment date in HTML footers
         run: |
-          DEPLOY_DATE=$(TZ=Europe/Berlin date +'%d.%m.%Y')
+          DEPLOY_DATE=$(TZ=Europe/Berlin date +'%d.%m.%Y, %H:%M')
           for file in ./*.html; do
             sed -i "s/__DEPLOY_DATE__/$DEPLOY_DATE/g" "$file"
           done
