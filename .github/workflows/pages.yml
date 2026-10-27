@@ -1,8 +1,8 @@
-name: Deploy static website to GitHub Pages
+name: Deploy website and First Attempt preview
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "first-attempt"]
   workflow_dispatch:
 
 permissions:
@@ -18,16 +18,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out production site from main
         uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site-root
+      - name: Check out First Attempt branch
+        uses: actions/checkout@v4
+        with:
+          ref: first-attempt
+          path: preview-src
+      - name: Assemble separate preview
+        run: |
+          mkdir -p site-root/preview
+          rsync -a --delete --exclude='.git' --exclude='.github' preview-src/ site-root/preview/
+          rm -rf site-root/preview/.git site-root/preview/.github
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
-      - name: Upload website files
+      - name: Upload production site plus preview folder
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: site-root
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
