@@ -167,3 +167,20 @@ body{background:#08090d;color:#f1f3f7}
 .focus-link span{margin-left:8px;color:#9aabff}
 @media(max-width:600px){.focus-highlight{padding:12px 0 58px}.focus-card{grid-template-columns:1fr;gap:17px;padding:24px 20px;min-height:0}.focus-kicker{font-size:9px}.focus-main h2{font-size:clamp(34px,10vw,48px)}.focus-link{grid-column:1;margin-top:0}}
 @media(prefers-reduced-motion:reduce){.focus-card{transition:none}}
+
+
+/* Compact visiting-card style for the LinkedIn highlight. */
+.focus-highlight{padding:10px 0 46px;background:#08090d;color:#f1f3f7}
+.focus-inner{border-top:0;padding-top:0;display:flex;justify-content:flex-end}
+.focus-card{position:relative;display:grid;grid-template-columns:1fr auto;column-gap:18px;row-gap:8px;align-items:center;width:min(100%,470px);min-height:0;padding:17px 20px 15px;overflow:hidden;text-decoration:none;color:inherit;background:linear-gradient(115deg,#11151e,#0d111b);border:1px solid #303744;border-left:3px solid #7186ff;border-radius:4px;box-shadow:0 8px 22px #0003;transition:border-color .2s ease,transform .2s ease}
+.focus-card:hover{border-color:#7186ff;transform:translateY(-1px)}
+.focus-kicker{grid-column:1/-1;align-self:start;color:#9aabff;font-size:8px;font-weight:700;letter-spacing:.15em}
+.focus-main{min-width:0}
+.focus-main .focus-title{margin:0 0 4px;color:#f1f3f7;font-size:17px;line-height:1.2;font-weight:650;letter-spacing:-.025em}
+.focus-main .focus-description{margin:0;color:#c5cad6;font-size:12px;line-height:1.5}
+.focus-main .focus-provider{margin:3px 0 0;color:#a2a8b4;font-size:11px;line-height:1.4}
+.focus-main strong{color:#fff;font-weight:650;white-space:nowrap}
+.focus-link{grid-column:2;grid-row:2/4;justify-self:end;align-self:center;white-space:nowrap;padding-bottom:4px;border-bottom:1px solid #59658d;color:#e1e6ff;font-size:10px}
+.focus-link span{margin-left:5px;color:#9aabff}
+@media(max-width:600px){.focus-highlight{padding:4px 0 34px}.focus-inner{justify-content:flex-start}.focus-card{width:100%;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;padding:15px 14px}.focus-main .focus-title{font-size:16px}.focus-main .focus-description{font-size:11px}.focus-link{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.focus-card{transition:none}}
