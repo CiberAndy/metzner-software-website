@@ -150,20 +150,3 @@ body{background:#08090d;color:#f1f3f7}
 .web-illustration .mock-art img{display:block;width:72%;height:72%;object-fit:contain;}
 .web-illustration .phone-mock .phone-monogram{display:grid;place-items:center;background:transparent;height:48px;margin-top:8px;}
 .web-illustration .phone-mock .phone-monogram img{display:block;width:100%;height:100%;object-fit:contain;}
-
-
-/* Featured LinkedIn highlight on the homepage */
-.featured-link{padding-top:10px;padding-bottom:clamp(56px,8vw,104px)}
-.featured-link-card{position:relative;display:flex;align-items:flex-end;justify-content:space-between;gap:32px;padding:clamp(26px,5vw,54px);overflow:hidden;border:1px solid #2d3550;border-radius:4px;background:radial-gradient(ellipse at 82% 15%,#243d9a66 0,transparent 48%),linear-gradient(120deg,#111522 0%,#0b0d14 70%);color:#f5f6fb}
-.featured-link-copy{max-width:650px}
-.featured-link .eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 22px;color:#aebcfb;font-size:11px;font-weight:700;letter-spacing:.16em}
-.featured-link-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#6e87ff;box-shadow:0 0 14px #6e87ff99}
-.featured-link h2{margin:0;font-size:clamp(27px,4.5vw,48px);line-height:1.08;letter-spacing:-.045em;font-weight:500}
-.featured-link h2 em{color:#9eafff;font-family:var(--font-serif,Georgia,serif);font-weight:400}
-.featured-link-copy>p:last-child{max-width:520px;margin:18px 0 0;color:#c0c6d5;font-size:15px;line-height:1.7}
-.featured-link-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;flex:none;padding:15px 18px;border:1px solid #7488e7;border-radius:2px;color:#f5f6fb;text-decoration:none;font-size:13px;font-weight:650;transition:background .2s ease,border-color .2s ease,transform .2s ease}
-.featured-link-cta span{font-size:18px;color:#aebcfb}
-.featured-link-cta:hover{background:#293b82;border-color:#aebcfb;transform:translateY(-2px)}
-.featured-link-cta:focus-visible{outline:2px solid #aebcfb;outline-offset:4px}
-@media(max-width:700px){.featured-link{padding-top:0;padding-bottom:64px}.featured-link-card{align-items:flex-start;flex-direction:column;gap:26px;padding:25px 22px}.featured-link .eyebrow{margin-bottom:16px}.featured-link-copy>p:last-child{font-size:14px}.featured-link-cta{width:100%;box-sizing:border-box}}
-@media(prefers-reduced-motion:reduce){.featured-link-cta{transition:none}.featured-link-cta:hover{transform:none}}
